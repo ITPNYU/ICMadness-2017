@@ -1,0 +1,28 @@
+{
+    "Kinectron": {
+        "helpers": [
+            "Lisa",
+            "Dano"
+        ],
+        "resources": [{
+            "name": "github",
+            "url": "https://github.com/lisajamhoury/kinectron"
+        }]
+    },
+    "Wikipedia API": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+                "name": "video",
+                "url": "https://www.youtube.com/watch?v=RPz75gcHj18"
+            },
+            {
+                "name": "code",
+                "url": "http://alpha.editor.p5js.org/icm/sketches/SJcgmBLTb"
+            },
+            {
+                "name": "documentation",
+                "url": "http://alpha.editor.p5js.org/icm/sketches/SJcgmBLTb"
+            }
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "start": [
+        "Make a project that #action# with #technology# about #topic#."
+    ],
+    "action": [
+        "only lasts a second",
+        "beeps"
+    ],
+    "topic": [
+        "climate change",
+        "popcorn",
+        "privacy",
+        "time",
+        "tap dancing",
+        "music",
+        "dialog",
+        "mirrors",
+        "sustainability",
+        "birds",
+        "museums",
+        "memes"
+    ],
+    "technology": [
+      "Kinectron",
+      "Wikipedia API",
+      "projection (not on wall)",
+      "knee",
+      "particle system",
+      "webcam",
+      "pong",
+      "text from project gutenberg",
+      "p5.Speech",
+      "recursion",
+      "weather data",
+      "gifs"
+    ]
+}
