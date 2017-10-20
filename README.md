@@ -1,6 +1,6 @@
 # ICMadness
 
-Welcome to ICMadness. As final project season approaches, you may feel the weight of coming up with a "big" "important" idea feels heavy at times. Today is about doing the opposite. Create a project based on random instructions from a bot. What can you do in 2 hours as a collaboration of three random ICM students with three random things (action, technology, topic) put together?
+Welcome to ICMadness. As final project season approaches, you may feel the weight of coming up with a "big" "important" idea. This workshop is about doing the opposite: create a project based on random instructions from a bot. What can you do in 2 hours as a collaboration of three random ICM students with three random things (action, technology, topic) put together?
 
 # Details
 * ITP Lounge
