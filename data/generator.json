@@ -7,6 +7,7 @@
         "beeps"
     ],
     "topic": [
+        "nature",
         "climate change",
         "popcorn",
         "privacy",
@@ -18,7 +19,8 @@
         "sustainability",
         "birds",
         "museums",
-        "memes"
+        "memes",
+        "outer space"
     ],
     "technology": [
       "Kinectron",
@@ -32,6 +34,10 @@
       "p5.Speech",
       "recursion",
       "weather data",
-      "gifs"
+      "gifs",
+      "microphone",
+      "tracery grammar",
+      "potentiometer",
+      "perlin noise"
     ]
 }
