@@ -1,6 +1,6 @@
 # ICMadness
 
-Welcome to ICMadness. As final project season approaches, you may feel the weight of coming up with a "big" "important" idea feels heavy at times. Today is about doing the opposite. Create a project based on random instructions from a bot. What can you do in 2 hours as a collaboration of three random ICM students with three random things (action, technology, topic) put together? The inspiration behind the project generator bot is the [Art Assignment Bot](https://twitter.com/artassignbot).
+Welcome to ICMadness. As final project season approaches, you may feel the weight of coming up with a "big" "important" idea feels heavy at times. Today is about doing the opposite. Create a project based on random instructions from a bot. What can you do in 2 hours as a collaboration of three random ICM students with three random things (action, technology, topic) put together?
 
 # Details
 * ITP Lounge
@@ -17,3 +17,7 @@ Welcome to ICMadness. As final project season approaches, you may feel the weigh
 6. At 1pm, make a 3 second GIF of your work. E-mail the GIF and your instructions to icm.madness@gmail.com.
 7. Write a short post about your experience on this [shared wordpress blog] -- LINK TO COME!
 7. Take a break to eat some pizza and gather back in the lounge at 1:30pm.
+
+# Inspiration
+* [Art Assignment Bot](https://twitter.com/artassignbot)
+* [Generonimos by Kate Compton](http://www.galaxykate.com/generominos/)
