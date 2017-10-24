@@ -4,7 +4,17 @@
     ],
     "action": [
         "only lasts a second",
-        "beeps"
+        "beeps",
+        "sings",
+        "teaches",
+        "inverts",
+        "randomly generates",
+        "doesn't have vowels",
+        "prophesies",
+        "measures current",
+        "writes a letter",
+        "tracks candy consumption",
+        "shields"
     ],
     "topic": [
         "nature",
@@ -20,7 +30,14 @@
         "birds",
         "museums",
         "memes",
-        "outer space"
+        "outer space",
+        "life in the city",
+        "hunger",
+        "precious metals",
+        "newspapers",
+        "the history of the bicycle",
+        "6 months ago",
+        "mitochondria"
     ],
     "technology": [
       "Kinectron",
@@ -38,6 +55,8 @@
       "microphone",
       "tracery grammar",
       "potentiometer",
-      "perlin noise"
+      "perlin noise",
+      "New York Public Library APIs",
+      "Library of Congress APIs"
     ]
 }
