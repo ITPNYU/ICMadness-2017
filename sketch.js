@@ -21,7 +21,7 @@ function preload() {
   resourceData = loadJSON('data/resources.json');
 }
 
-
+let wheel1;
 function setup() {
   params = getURLParams();
 
@@ -31,12 +31,29 @@ function setup() {
   noCanvas();
   // Make the grammar
   grammar = tracery.createGrammar(data);
+ 
+  createCanvas(1300, 500);
+  
   generate();
 
   // A button to generate a new sentence
   let spin_button = select('#spin_button');
   spin_button.mousePressed(generate);
+}
 
+
+function draw(){
+    background(255);
+    textAlign(LEFT, TOP);
+    text("Make a project that", 20, height/2);
+    wheel1.display();
+    wheel1.move();
+    text("with", 530, height/2);
+    wheel2.display();
+    wheel2.move();
+    text("about", 890, height/2);
+    wheel3.display();
+    wheel3.move();
 }
 
 
@@ -48,12 +65,17 @@ function generate() {
     seed = new Date().getTime();
   }
   randomSeed(seed);
-
+  wheel1 = new Wheel(200,0,300,height,data.action);
+  wheel2 = new Wheel(560,0,300,height,data.technology);
+  wheel3 = new Wheel(930,0,300,height,data.topic);
+    wheel1.restart();
+    wheel2.restart();
+    wheel3.restart();
   // clear any resources?
   for (let i = 0; i < resourceElts.length; i++) {
     resourceElts[i].remove();
   }
-
+    
   let expansion = grammar.expand('#start#');
   select('#instructions').html(expansion.childText);
 
