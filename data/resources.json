@@ -24,5 +24,26 @@
                 "url": "https://www.mediawiki.org/wiki/API:Main_page"
             }
         ]
-    }
+    },
+    "potentiometer": {
+      "helpers":[],
+      "resources": [{
+          "name": "code",
+          "url": "https://github.com/OllieBck/potentiometerExample"
+        }]
+    },
+    "webcam": {
+      "helpers":[],
+      "resources": [
+        {
+          "name": "code",
+          "url": "https://alpha.editor.p5js.org/OllieBck/sketches/S1yrAETTb"
+        },
+        {
+          "name": "video",
+          "url": "https://www.youtube.com/watch?v=bkGf4fEHKak&list=PLRqwX-V7Uu6aKKsDHZdDvN6oCJ2hRY_Ig&index=1"
+        }
+      ]
+    },
+
 }
