@@ -22,6 +22,9 @@ function preload() {
 }
 
 let wheel1;
+let wheel2;
+let wheel3;
+let gotResult = false;
 
 function setup() {
   params = getURLParams();
@@ -57,6 +60,46 @@ function draw() {
 
   // TODO: return the final instructions as text
   // and generate resources
+  if(wheel1.done && wheel2.done && wheel3.done && !gotResult){
+      newResults([wheel1.result, wheel2.result, wheel3.result]);
+  }
+}
+function newResults(r){
+    console.log("DONE! Results below");
+    console.log(r);
+    r.forEach(function(r){
+        console.log(r);
+        res = resourceData[r];
+        if(res != undefined){
+            console.log(res);
+            let container = document.getElementById("resources");
+
+            let title = document.createElement("li");
+            title.innerHTML = r;
+            container.appendChild(title);
+
+            let list = document.createElement("ul");
+            container.appendChild(list);
+
+            let helpers = res["helpers"];
+            if(helpers != undefined){
+                let li = document.createElement("li");
+                li.innerHTML = "Ask " + helpers.join(" or ");
+                list.appendChild(li); 
+            }
+            let links = res["resources"];
+            if(links != undefined){
+                let li = document.createElement("li");
+                let linktags = [];
+                links.forEach(function(link){
+                    linktags.push( "<a target='_blank' href='"+link.url+"'>"+link.name+"</a>");
+                });
+                li.innerHTML = "Check out " + linktags.join(", ");
+                list.appendChild(li); 
+            }
+        }
+    });
+    gotResult = true;
 }
 
 
@@ -71,6 +114,7 @@ function generate() {
   wheel1 = new Wheel(210, 0, 300, height, data.topic);
   wheel2 = new Wheel(570, 0, 300, height, data.action);
   wheel3 = new Wheel(940, 0, 300, height, data.technology);
+  gotResult = false;
   wheel1.restart();
   wheel2.restart();
   wheel3.restart();

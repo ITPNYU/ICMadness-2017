@@ -32,6 +32,7 @@ class Wheel {
     this.accelaration = 0.01;
     this.done = false;
     this.selected = -1;
+    this.result = undefined;
     this.frameColor = color(random(0, 255), random(0, 255), random(0, 255));
   }
   display() {
@@ -81,6 +82,7 @@ class Wheel {
         for (let i = 0; i < this.data.length; i++) {
           if (abs((this.positions[i] + this.boxHeight / 2) - (this.y + this.h / 2)) <= 3) {
             this.selected = i;
+            this.result = this.data[i];
             this.done = true;
             this.speed = 0;
           }
