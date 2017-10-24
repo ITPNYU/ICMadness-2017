@@ -78,7 +78,7 @@ function generate() {
   }
 
   let expansion = grammar.expand('#start#');
-  select('#instructions').html(expansion.childText);
+  // select('#instructions').html(expansion.childText);
 
   if (!permalink) {
     permalink = createA('?id=' + seed, 'permalink');
