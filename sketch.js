@@ -27,13 +27,12 @@ function setup() {
   params = getURLParams();
 
   // Seed with date and time
+  // Math.seedrandom(seed);
 
-  //Math.seedrandom(seed);
-  noCanvas();
   // Make the grammar
   grammar = tracery.createGrammar(data);
 
-  createCanvas(1300, 500);
+  createCanvas(1300, 500).parent('canvasContainer');
 
   generate();
 
@@ -55,6 +54,9 @@ function draw() {
   text("about", 890, height / 2);
   wheel3.display();
   wheel3.move();
+
+  // TODO: return the final instructions as text
+  // and generate resources
 }
 
 
@@ -77,7 +79,7 @@ function generate() {
     resourceElts[i].remove();
   }
 
-  let expansion = grammar.expand('#start#');
+  // let expansion = grammar.expand('#start#');
   // select('#instructions').html(expansion.childText);
 
   if (!permalink) {
@@ -87,28 +89,30 @@ function generate() {
     permalink.attribute('href', '?id=' + seed);
   }
 
-  let technology = expansion.children[0].children[3].finalText;
-  let resources = resourceData[technology];
-  if (resources) {
-    console.log(resourceData);
-    for (let i = 0; i < resources.resources.length; i++) {
-      let elt = createElement('li', '');
-      elt.parent('#resources');
-      let r = resources.resources[i];
-      let a = createA(r.url, r.name);
-      a.parent(elt);
-      resourceElts.push(elt);
-    }
-    let people = resources.helpers;
-    for (let i = 0; i < people.length; i++) {
-      let elt = createElement('li', 'Ask ' + people[i] + '!');
-      elt.parent('#resources');
-      resourceElts.push(elt);
-    }
+  // TODO: Show resources (below canvas) based on what was picked
 
-  } else {
-    let elt = createElement('li', 'No resources for ' + technology);
-    elt.parent('#resources');
-    resourceElts.push(elt);
-  }
+  // let technology = expansion.children[0].children[3].finalText;
+  // let resources = resourceData[technology];
+  // if (resources) {
+  //   console.log(resourceData);
+  //   for (let i = 0; i < resources.resources.length; i++) {
+  //     let elt = createElement('li', '');
+  //     elt.parent('#resources');
+  //     let r = resources.resources[i];
+  //     let a = createA(r.url, r.name);
+  //     a.parent(elt);
+  //     resourceElts.push(elt);
+  //   }
+  //   let people = resources.helpers;
+  //   for (let i = 0; i < people.length; i++) {
+  //     let elt = createElement('li', 'Ask ' + people[i] + '!');
+  //     elt.parent('#resources');
+  //     resourceElts.push(elt);
+  //   }
+  //
+  // } else {
+  //   let elt = createElement('li', 'No resources for ' + technology);
+  //   elt.parent('#resources');
+  //   resourceElts.push(elt);
+  // }
 }

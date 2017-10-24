@@ -50,9 +50,9 @@ class Wheel {
       stroke(random(0, 255), random(0, 255), random(0, 255));
       strokeWeight(5);
       line(this.x + 50, this.y + this.h / 2 + 20, this.x + this.w - 50, this.y + this.h / 2 + 20);
-
     }
     noStroke();
+
     for (let i = 0; i < this.data.length; i++) {
       if (this.positions[i] > this.y && this.positions[i] < this.y + this.h - this.boxHeight) {
         //rect(this.x, this.positions[i], this.w, this.boxHeight);
@@ -63,6 +63,7 @@ class Wheel {
         text(this.data[i], this.x + this.w / 2, this.positions[i] + this.boxHeight / 2);
       }
     }
+
 
   }
   move() {
