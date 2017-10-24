@@ -48,13 +48,13 @@ function setup() {
 function draw() {
   background(0);
   textAlign(LEFT, TOP);
-  text("Make a project that", 20, height / 2);
+  text("Make a project about", 20, height / 2);
   wheel1.display();
   wheel1.move();
-  text("with", 530, height / 2);
+  text("that", 540, height / 2);
   wheel2.display();
   wheel2.move();
-  text("about", 890, height / 2);
+  text("with", 900, height / 2);
   wheel3.display();
   wheel3.move();
 
@@ -111,9 +111,9 @@ function generate() {
     seed = new Date().getTime();
   }
   randomSeed(seed);
-  wheel1 = new Wheel(200, 0, 300, height, data.action);
-  wheel2 = new Wheel(560, 0, 300, height, data.technology);
-  wheel3 = new Wheel(930, 0, 300, height, data.topic);
+  wheel1 = new Wheel(210, 0, 300, height, data.topic);
+  wheel2 = new Wheel(570, 0, 300, height, data.action);
+  wheel3 = new Wheel(940, 0, 300, height, data.technology);
   gotResult = false;
   wheel1.restart();
   wheel2.restart();
