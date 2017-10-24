@@ -43,7 +43,7 @@ function setup() {
 
 
 function draw(){
-    background(255);
+    background(0);
     textAlign(LEFT, TOP);
     text("Make a project that", 20, height/2);
     wheel1.display();

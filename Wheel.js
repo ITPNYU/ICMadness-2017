@@ -35,7 +35,8 @@ class Wheel{
     }
     display(){
         noStroke(); 
-        fill(this.frameColor);
+        //fill(this.frameColor);
+        fill(0);
         rect(this.x, this.y, this.w, this.h);
         for(let i = 10; i< 50; i++){
             let o = map(i, 10, 50-1, 0, 255);
