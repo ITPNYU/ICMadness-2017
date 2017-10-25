@@ -14,7 +14,6 @@ As final project season approaches, you may feel the weight of coming up with a 
 3. Find your [group of three] -- LINK TO COME!
 4. [Generate your project instructions](https://itpnyu.github.io/ICMadness/)!
 5. Start making stuff
-6. At 1pm, make a 3 second GIF of your work. E-mail the GIF and your instructions to icm.madness@gmail.com.
 7. Write a short post about your experience on this [shared wordpress blog] -- LINK TO COME!
 7. Take a break to eat some pizza and gather back in the lounge at 1:30pm.
 

@@ -106,7 +106,6 @@ function generate() {
     resourceElts[i].remove();
   }
 
-
   wheel1 = new Wheel(200, 0, 320, height, data.topic);
   wheel2 = new Wheel(570, 0, 320, height, data.action);
   wheel3 = new Wheel(940, 0, 320, height, data.technology);
