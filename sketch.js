@@ -124,30 +124,4 @@ function generate() {
     '&w3=' + encodeURIComponent(btoa(wheel3.result())));
 
   first = false;
-  // TODO: Show resources (below canvas) based on what was picked
-
-  // let technology = expansion.children[0].children[3].finalText;
-  // let resources = resourceData[technology];
-  // if (resources) {
-  //   console.log(resourceData);
-  //   for (let i = 0; i < resources.resources.length; i++) {
-  //     let elt = createElement('li', '');
-  //     elt.parent('#resources');
-  //     let r = resources.resources[i];
-  //     let a = createA(r.url, r.name);
-  //     a.parent(elt);
-  //     resourceElts.push(elt);
-  //   }
-  //   let people = resources.helpers;
-  //   for (let i = 0; i < people.length; i++) {
-  //     let elt = createElement('li', 'Ask ' + people[i] + '!');
-  //     elt.parent('#resources');
-  //     resourceElts.push(elt);
-  //   }
-  //
-  // } else {
-  //   let elt = createElement('li', 'No resources for ' + technology);
-  //   elt.parent('#resources');
-  //   resourceElts.push(elt);
-  // }
 }
