@@ -2,7 +2,8 @@
     "a Kinectron": {
         "helpers": [
             "Lisa",
-            "Dano"
+            "Dano",
+            "Mimi"
         ],
         "resources": [{
             "name": "github",
@@ -12,18 +13,15 @@
     "the Wikipedia API": {
         "helpers": ["Shiffman"],
         "resources": [{
-                "name": "video",
-                "url": "https://www.youtube.com/watch?v=RPz75gcHj18"
-            },
-            {
-                "name": "code",
-                "url": "http://alpha.editor.p5js.org/icm/sketches/SJcgmBLTb"
-            },
-            {
-                "name": "documentation",
-                "url": "https://www.mediawiki.org/wiki/API:Main_page"
-            }
-        ]
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=RPz75gcHj18"
+        }, {
+            "name": "code",
+            "url": "http://alpha.editor.p5js.org/icm/sketches/SJcgmBLTb"
+        }, {
+            "name": "documentation",
+            "url": "https://www.mediawiki.org/wiki/API:Main_page"
+        }]
     },
     "projection (not on wall)": {
         "helpers": [],
