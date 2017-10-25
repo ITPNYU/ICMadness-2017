@@ -29,7 +29,7 @@ class Wheel {
     this.speed = 0;
     this.on = false;
     this.minSpeed = 1;
-    this.accelaration = 0.01;
+    this.acceleration = 0.99;
     this.done = false;
     this.selected = -1;
     this.frameColor = color(random(0, 255), random(0, 255), random(0, 255));
@@ -57,7 +57,7 @@ class Wheel {
       if (this.positions[i] > this.y && this.positions[i] < this.y + this.h - this.boxHeight) {
         //rect(this.x, this.positions[i], this.w, this.boxHeight);
         textAlign(CENTER, TOP);
-        textSize(20);
+        textSize(16);
         noStroke();
         fill(this.colors[i]);
         text(this.data[i], this.x + this.w / 2, this.positions[i] + this.boxHeight / 2);
@@ -75,7 +75,7 @@ class Wheel {
         }
       }
       if (this.speed > this.minSpeed) {
-        this.speed -= this.speed * this.accelaration;
+        this.speed *= this.acceleration;
       } else {
         this.speed = this.minSpeed;
         for (let i = 0; i < this.data.length; i++) {
@@ -87,11 +87,53 @@ class Wheel {
         }
       }
     }
-
   }
-  restart() {
+
+  restart(speed) {
     this.on = true;
     this.done = false;
-    this.speed = random(10, 40);
+    // Bad hack to get selected before running
+    speed = speed || random(10, 40);
+    this.speed = speed;
+    let pos_cache = this.positions.slice();
+    this.selected = -1;
+    while(this.selected === -1) {
+      this.move();
+    }
+
+    this.on = true;
+    this.done = false;
+    this.positions = pos_cache;
+    this.speed = speed;
+  }
+
+  result() {
+    return this.data[this.selected];
+  }
+
+  target(str) {
+    let ids = [];
+    for(let id = this.data.indexOf(str); id !== -1; id = this.data.indexOf(str, id + 1)) {
+      ids.push(id);
+    }
+    let speed = null;
+    if(ids) {
+      let tempSpeed = this.minSpeed;
+      let positions = ids.map(id => this.positions[id]);
+      while(!speed) {
+        tempSpeed /= this.acceleration;
+        for(let i = 0; i < positions.length; i++) {
+          positions[i] += tempSpeed;
+          if (positions[i] > this.y + this.h) {
+            positions[i] -= this.data.length * this.boxHeight;
+          }
+          if(tempSpeed > 20 && abs((positions[i] + this.boxHeight / 2) - (this.y + this.h / 2)) <= this.boxHeight / 2) {
+            speed = tempSpeed;
+          }
+        }
+        if(tempSpeed > 100) break;
+      }
+    }
+    this.restart(speed);
   }
 }
