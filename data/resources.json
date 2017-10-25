@@ -69,7 +69,7 @@
         }]
     },
     "New York Public Library APIs": {
-        "helpers": [],
+        "helpers": ["Mathura"],
         "resources": [{
             "name": "documentation",
             "url": "http://api.repo.nypl.org/"
@@ -83,7 +83,7 @@
         }]
     },
     "weather data": {
-        "helpers": [],
+        "helpers": ["Mathura"],
         "resources": [{
             "name": "documentation",
             "url": "https://openweathermap.org/api"
@@ -103,7 +103,7 @@
         }]
     },
     "recursion": {
-        "helpers": [],
+        "helpers": ["Mathura"],
         "resources": [{
             "name": "video",
             "url": "https://www.youtube.com/watch?v=jPsZwrV9ld0"
@@ -115,11 +115,38 @@
         }]
     },
     "csv": {
-        "helpers": [],
+        "helpers": ["Mathura"],
         "resources": [{
             "name": "documentation",
             "url": "https://p5js.org/reference/#/p5/loadTable"
 
+        }]
+    },
+    "Perlin noise": {
+        "helpers": [],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://p5js.org/examples/math-noise-wave.html"
+
+        }]
+    },
+    "Audio File": {
+        "helpers": [],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://p5js.org/reference/#/p5.SoundFile"
+
+        }]
+    },
+    "Translate, Rotate,Scale": {
+        "helpers": ["Mathura"],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://p5js.org/reference/#group-Transform"
+
+        }, {
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=o9sgjuh-CBM&list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H&index=1"
         }]
     },
     "particle systems": {
