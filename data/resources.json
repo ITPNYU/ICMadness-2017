@@ -121,5 +121,43 @@
             "url": "https://p5js.org/reference/#/p5/loadTable"
 
         }]
+    },
+    "particle systems": {
+        "helpers": [],
+        "resources": [{
+            "name": "example",
+            "url": "https://p5js.org/examples/simulate-particle-system.html"
+        }, {
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=vdgiqMkFygc"
+        }, {
+            "name": "documentation",
+            "url": "http://natureofcode.com/book/chapter-4-particle-systems/"
+        }]
+    },
+    "accelerometer": {
+        "helpers": [],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://itp.nyu.edu/classes/tangible-interaction/2017/02/25/arduino101-accelerometer-gyro-madgwick-library/"
+        }, {
+            "name": "documentation",
+            "url": "https://itp.nyu.edu/physcomp/lab-intro-to-serial-communications/"
+
+        }, {
+            "name": "documentation",
+            "url": "https://itp.nyu.edu/physcomp/labs/labs-serial-communication/two-way-duplex-serial-communication-using-p5js/"
+        }]
+    },
+    "Twitter API": {
+        "helpers": [],
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=7-nX3YOC4OA"
+
+        }, {
+            "name": "documentation",
+            "url": "https://developer.twitter.com/en/docs/api-reference-index"
+        }]
     }
 }
