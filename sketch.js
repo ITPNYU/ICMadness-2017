@@ -64,31 +64,30 @@ function newResults(r) {
     console.log(r);
     res = resourceData[r];
     if (res != undefined) {
+      console.log('found something');
       console.log(res);
-      let container = document.getElementById("resources");
+      let container = select("#resources");
 
-      let title = document.createElement("li");
-      title.innerHTML = r;
-      container.appendChild(title);
+      let title = createElement("li","resources");
+      container.child(title);
 
-      let list = document.createElement("ul");
-      container.appendChild(list);
+      let list = createElement("ul","");
+      container.child(list);
 
       let helpers = res["helpers"];
       if (helpers != undefined) {
-        let li = document.createElement("li");
-        li.innerHTML = "Ask " + helpers.join(" or ");
-        list.appendChild(li);
+        let li = createElement("li", "Ask " + helpers.join(" or "));
+        list.child(li);
       }
       let links = res["resources"];
       if (links != undefined) {
-        let li = document.createElement("li");
+        let li = createElement("li", "");
         let linktags = [];
         links.forEach(function(link) {
           linktags.push("<a target='_blank' href='" + link.url + "'>" + link.name + "</a>");
         });
-        li.innerHTML = "Check out " + linktags.join(", ");
-        list.appendChild(li);
+        li.html("Check out " + linktags.join(", "));
+        list.child(li);
       }
     }
   });
