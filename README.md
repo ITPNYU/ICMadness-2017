@@ -15,7 +15,7 @@ As final project season approaches, you may feel the weight of coming up with a 
 4. [Generate your project instructions](https://itpnyu.github.io/ICMadness/)!
 5. Start making stuff
 7. Write a short post about your experience on this [shared wordpress blog] -- LINK TO COME!
-7. Take a break to eat some pizza and gather back in the lounge at 1:30pm.
+7. Take a break to eat some delicious dumplings and gather back in the lounge at 1:30pm!
 
 # Inspiration
 * [Art Assignment Bot](https://twitter.com/artassignbot)
