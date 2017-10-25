@@ -37,13 +37,16 @@ function setup() {
 function draw() {
   background(0);
   textAlign(LEFT, TOP);
+  fill(255);
   text("Make a project about", 20, height / 2);
   wheel1.display();
   wheel1.move();
-  text("that", 540, height / 2);
+  fill(255);
+  text("that", 545, height / 2);
   wheel2.display();
   wheel2.move();
-  text("with", 900, height / 2);
+  fill(255);
+  text("with", 915, height / 2);
   wheel3.display();
   wheel3.move();
 
@@ -94,9 +97,9 @@ function newResults(r) {
 
 
 function generate() {
-  wheel1 = new Wheel(210, 0, 300, height, data.topic);
-  wheel2 = new Wheel(570, 0, 300, height, data.action);
-  wheel3 = new Wheel(940, 0, 300, height, data.technology);
+  wheel1 = new Wheel(200, 0, 320, height, data.topic);
+  wheel2 = new Wheel(570, 0, 320, height, data.action);
+  wheel3 = new Wheel(940, 0, 320, height, data.technology);
   gotResult = false;
   if (first && params.w1) {
     wheel1.target(atob(decodeURIComponent(params.w1)));

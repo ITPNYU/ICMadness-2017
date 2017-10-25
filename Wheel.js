@@ -57,7 +57,7 @@ class Wheel {
       if (this.positions[i] > this.y && this.positions[i] < this.y + this.h - this.boxHeight) {
         //rect(this.x, this.positions[i], this.w, this.boxHeight);
         textAlign(CENTER, TOP);
-        textSize(20);
+        textSize(16);
         noStroke();
         fill(this.colors[i]);
         text(this.data[i], this.x + this.w / 2, this.positions[i] + this.boxHeight / 2);
