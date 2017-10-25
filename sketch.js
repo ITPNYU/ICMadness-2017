@@ -10,7 +10,6 @@ let grammar;
 let data;
 let resourceData;
 let resourceElts = [];
-let seed;
 let permalink;
 let params;
 let first = true;
@@ -61,7 +60,7 @@ function draw() {
   // TODO: return the final instructions as text
   // and generate resources
   if(wheel1.done && wheel2.done && wheel3.done && !gotResult){
-      newResults([wheel1.result, wheel2.result, wheel3.result]);
+      newResults([wheel1.result(), wheel2.result(), wheel3.result()]);
   }
 }
 function newResults(r){
@@ -85,7 +84,7 @@ function newResults(r){
             if(helpers != undefined){
                 let li = document.createElement("li");
                 li.innerHTML = "Ask " + helpers.join(" or ");
-                list.appendChild(li); 
+                list.appendChild(li);
             }
             let links = res["resources"];
             if(links != undefined){
@@ -95,7 +94,7 @@ function newResults(r){
                     linktags.push( "<a target='_blank' href='"+link.url+"'>"+link.name+"</a>");
                 });
                 li.innerHTML = "Check out " + linktags.join(", ");
-                list.appendChild(li); 
+                list.appendChild(li);
             }
         }
     });
@@ -104,20 +103,22 @@ function newResults(r){
 
 
 function generate() {
-  if (first) {
-    seed = params.id || new Date().getTime();
-    first = false;
-  } else {
-    seed = new Date().getTime();
+  if (first && params.id) {
+    randomSeed(params.id);
   }
-  randomSeed(seed);
   wheel1 = new Wheel(210, 0, 300, height, data.topic);
   wheel2 = new Wheel(570, 0, 300, height, data.action);
   wheel3 = new Wheel(940, 0, 300, height, data.technology);
   gotResult = false;
-  wheel1.restart();
-  wheel2.restart();
-  wheel3.restart();
+  if (first && params.w1) {
+    wheel1.target(atob(decodeURIComponent(params.w1)));
+    wheel2.target(atob(decodeURIComponent(params.w2)));
+    wheel3.target(atob(decodeURIComponent(params.w3)));
+  } else {
+    wheel1.restart();
+    wheel2.restart();
+    wheel3.restart();
+  }
   // clear any resources?
   for (let i = 0; i < resourceElts.length; i++) {
     resourceElts[i].remove();
@@ -127,12 +128,15 @@ function generate() {
   // select('#instructions').html(expansion.childText);
 
   if (!permalink) {
-    permalink = createA('?id=' + seed, 'permalink');
+    permalink = createA('', 'permalink');
     permalink.parent('#permalink');
-  } else {
-    permalink.attribute('href', '?id=' + seed);
   }
+  permalink.attribute('href',
+    '?w1=' + encodeURIComponent(btoa(wheel1.result())) +
+    '&w2=' + encodeURIComponent(btoa(wheel2.result())) +
+    '&w3=' + encodeURIComponent(btoa(wheel3.result())));
 
+  first = false;
   // TODO: Show resources (below canvas) based on what was picked
 
   // let technology = expansion.children[0].children[3].finalText;
