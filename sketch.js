@@ -70,18 +70,22 @@ function newResults(r) {
 
       let title = createElement("li","resources");
       container.child(title);
+      resourceElts.push(title);
 
       let list = createElement("ul","");
       container.child(list);
+      resourceElts.push(list);
 
       let helpers = res["helpers"];
       if (helpers != undefined) {
         let li = createElement("li", "Ask " + helpers.join(" or "));
         list.child(li);
+        resourceElts.push(li);
       }
       let links = res["resources"];
       if (links != undefined) {
         let li = createElement("li", "");
+        resourceElts.push(li);
         let linktags = [];
         links.forEach(function(link) {
           linktags.push("<a target='_blank' href='" + link.url + "'>" + link.name + "</a>");
@@ -96,6 +100,13 @@ function newResults(r) {
 
 
 function generate() {
+
+  // clear any resources?
+  for (let i = 0; i < resourceElts.length; i++) {
+    resourceElts[i].remove();
+  }
+
+
   wheel1 = new Wheel(200, 0, 320, height, data.topic);
   wheel2 = new Wheel(570, 0, 320, height, data.action);
   wheel3 = new Wheel(940, 0, 320, height, data.technology);
@@ -109,10 +120,7 @@ function generate() {
     wheel2.restart();
     wheel3.restart();
   }
-  // clear any resources?
-  for (let i = 0; i < resourceElts.length; i++) {
-    resourceElts[i].remove();
-  }
+
 
   if (!permalink) {
     permalink = createA('', 'permalink');
