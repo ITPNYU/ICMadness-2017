@@ -1,6 +1,8 @@
 
 # Created by https://www.gitignore.io/api/vim,osx
 
+students.txt
+
 ### OSX ###
 *.DS_Store
 .AppleDouble

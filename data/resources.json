@@ -172,14 +172,14 @@
         }]
     },
     "Library of Congress APIs": {
-        "helpers": [],
+        "helpers": ["Shiffman"],
         "resources": [{
             "name": "documentation",
             "url": "https://labs.loc.gov/lc-for-robots/"
         }]
     },
     "an accelerometer": {
-        "helpers": [],
+        "helpers": ["Shawn", "Mathura"],
         "resources": [{
             "name": "documentation",
             "url": "https://itp.nyu.edu/classes/tangible-interaction/2017/02/25/arduino101-accelerometer-gyro-madgwick-library/"
@@ -250,8 +250,11 @@
         "resources": []
     },
     "a CSV file": {
-        "helpers": [],
-        "resources": []
+        "helpers": ["Shiffman"],
+        "resources": [{
+            "name": "loadTable()",
+            "url": "https://p5js.org/reference/#/p5/loadTable"
+        }]
     },
     "a video file": {
         "helpers": ["Shawn"],
