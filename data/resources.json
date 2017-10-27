@@ -164,11 +164,14 @@
             "url": "https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD"
         }]
     },
-    "New York Public Library APIs": {
+    "Wordnik API": {
         "helpers": ["Mathura"],
         "resources": [{
             "name": "documentation",
-            "url": "http://api.repo.nypl.org/"
+            "url": "http://developer.wordnik.com/docs.html"
+        }, {
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=YsgdUaOrFnQ"
         }]
     },
     "Library of Congress APIs": {
