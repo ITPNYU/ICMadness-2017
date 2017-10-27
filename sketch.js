@@ -112,6 +112,7 @@ function newResults(r) {
 
 
 function generate() {
+  trip_for_two.fade(0, 1);
   casino.play();
 
   // clear any resources?
