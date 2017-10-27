@@ -9,6 +9,9 @@
         "resources": [{
             "name": "github",
             "url": "https://github.com/lisajamhoury/kinectron"
+        }, {
+            "name": "Catch Example",
+            "url": "http://alpha.editor.p5js.org/lisajamhoury/sketches/H1eVwpgRW"
         }]
     },
     "the Wikipedia API": {
