@@ -10,10 +10,15 @@ let permalink;
 let params;
 let first = true;
 
+let casino;
+let trip_for_two;
+
 // Here is the grammar
 function preload() {
   data = loadJSON('data/generator.json');
   resourceData = loadJSON('data/resources.json');
+  casino = loadSound('sound/casino.mp3');
+  trip_for_two = loadSound('sound/trip-for-two.mp3');
 }
 
 let wheel1;
@@ -58,6 +63,13 @@ function draw() {
 }
 
 function newResults(r) {
+
+  // fade out sound
+  casino.fade(0, 1);
+  setTimeout(function() {
+    trip_for_two.play();
+  }, 2000);
+
   console.log("DONE! Results below");
   console.log(r);
   r.forEach(function(r) {
@@ -68,11 +80,11 @@ function newResults(r) {
       console.log(res);
       let container = select("#resources");
 
-      let title = createElement("li","resources");
+      let title = createElement("li", "resources");
       container.child(title);
       resourceElts.push(title);
 
-      let list = createElement("ul","");
+      let list = createElement("ul", "");
       container.child(list);
       resourceElts.push(list);
 
@@ -100,6 +112,7 @@ function newResults(r) {
 
 
 function generate() {
+  casino.play();
 
   // clear any resources?
   for (let i = 0; i < resourceElts.length; i++) {

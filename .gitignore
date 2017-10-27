@@ -1,7 +1,7 @@
 
 # Created by https://www.gitignore.io/api/vim,osx
 
-students.txt
+students*
 
 ### OSX ###
 *.DS_Store
