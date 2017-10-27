@@ -164,11 +164,14 @@
             "url": "https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD"
         }]
     },
-    "New York Public Library APIs": {
+    "NYTimes API": {
         "helpers": ["Mathura"],
         "resources": [{
             "name": "documentation",
-            "url": "http://api.repo.nypl.org/"
+            "url": "https://developer.nytimes.com/"
+        }, {
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=IMne3LY4bks"
         }]
     },
     "Library of Congress APIs": {
