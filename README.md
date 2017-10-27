@@ -11,7 +11,7 @@ As final project season approaches, you may feel the weight of coming up with a 
 # Instructions
 1. Arrive at the ITP Lounge a 5 minutes before 11am on Friday, Oct 27th.
 2. Listen to a short schpiel.
-3. Find your [group of three](http://shiffman.github.io/randomizer/groups/?id=-KxQCkALrWuZppHkyn_R&seed=2)!
+3. Find your [group of three](https://shiffman.github.io/randomizer/groups/?id=-KxT4P5i7JUx5_b6_yog&seed=2)!
 4. [Generate your project instructions](https://itpnyu.github.io/ICMadness/)!
 5. Start making stuff
 7. Post a description and GIF / video to the blog -- [instructions below](#documentation)
