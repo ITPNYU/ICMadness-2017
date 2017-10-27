@@ -34,8 +34,9 @@ function setup() {
   generate();
 
   // A button to generate a new sentence
-  let spin_button = select('#spin_button');
-  spin_button.mousePressed(generate);
+  //let spin_button = select('#spin_button');
+  //spin_button.mousePressed(generate);
+  document.getElementById("spin_button").addEventListener("click", generate);
 }
 
 

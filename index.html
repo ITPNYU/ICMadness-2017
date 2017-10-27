@@ -20,6 +20,14 @@
         a {
             color: white;
         }
+        .half{
+            width: 50%;
+            display:inline-block;
+                float:left;
+        }
+        .half img{
+            width:70%;
+        }
     </style>
 
 </head>
@@ -29,11 +37,11 @@
     <h1>ICMadness</h1>
 
     <p>
-        <button id="spin_button">spin again</button>
+        <!--<button id="spin_button">spin again</button>-->
     </p>
 
     <div id="canvasContainer"></div>
-
+    <div class="half">
     <p>
         <div id="instructions"></div>
         <div>
@@ -42,6 +50,10 @@
         </div>
         <div id="permalink"></div>
     </p>
+    </div>
+    <div class="half">
+        <img id="spin_button" src="https://openclipart.org/image/2400px/svg_to_png/167247/Rounded-Button.png"></img>
+    </div>
 
 
 </body>
