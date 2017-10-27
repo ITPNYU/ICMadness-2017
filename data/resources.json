@@ -228,7 +228,13 @@
     },
     "the mouse": {
         "helpers": [],
-        "resources": []
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=1MPJZ6M52dI"
+        }, {
+            "name": "documentation",
+            "url": "https://itp.nyu.edu/physcomp/labs/labs-mouse-control/lab-mouse-control/"
+        }]
     },
     "translate, rotate, and scale": {
         "helpers": ["Mathura"],
@@ -243,11 +249,17 @@
     },
     "nested for loops": {
         "helpers": [],
-        "resources": []
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=1c1_TMdf8b8"
+        }]
     },
     "arrays of objects": {
         "helpers": ["Shawn"],
-        "resources": []
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=fBqaA7zRO58"
+        }]
     },
     "a CSV file": {
         "helpers": ["Shiffman"],
@@ -258,6 +270,15 @@
     },
     "a video file": {
         "helpers": ["Shawn"],
-        "resources": []
+        "resources": [{
+            "name": "example",
+            "url": "https://p5js.org/examples/dom-video-pixels.html"
+        }, {
+            "name": "documentation",
+            "url": "https://p5js.org/reference/#/p5/createCapture"
+        }, {
+            "name": "tool",
+            "url": "http://antiboredom.github.io/videogrep/"
+        }]
     }
 }
