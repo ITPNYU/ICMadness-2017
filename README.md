@@ -14,7 +14,7 @@ As final project season approaches, you may feel the weight of coming up with a 
 3. Find your [group of three](http://shiffman.github.io/randomizer/groups/?id=-KxQCkALrWuZppHkyn_R&seed=2)!
 4. [Generate your project instructions](https://itpnyu.github.io/ICMadness/)!
 5. Start making stuff
-7. Post a description and GIF / video to [shared wordpress blog] -- LINK TO COME!
+7. Post a description and GIF / video to the blog -- [instructions below](#documentation)
 7. Take a break to eat some delicious dumplings and gather back in the lounge at 1:30pm!
 
 # Inspiration
