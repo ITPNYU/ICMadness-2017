@@ -68,7 +68,7 @@ function newResults(r) {
   casino.fade(0, 1);
   setTimeout(function() {
     trip_for_two.play();
-  }, 2000);
+  }, 1200);
 
   console.log("DONE! Results below");
   console.log(r);
