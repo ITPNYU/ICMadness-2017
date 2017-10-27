@@ -19,4 +19,14 @@ As final project season approaches, you may feel the weight of coming up with a 
 
 # Inspiration
 * [Art Assignment Bot](https://twitter.com/artassignbot)
-* [Generonimos by Kate Compton](http://www.galaxykate.com/generominos/)
+* [Generonimos by Kate Compton](http://www.galaxykate.com/generominos)
+
+# Documentation
+
+Towards the end of ICMadness, we will spend a few minutes documenting your work by creating a post on the ICM Blog. This will include adding a gif of what you have made. To make the gif, you can use [giphy](https://giphy.com/create/gifmaker). 
+
+1. Visit the [blog link](https://itp.nyu.edu/workshops/icm2017/wp-admin/) and login with your NetID and password. (your netID is the same as your email adress, eg - mmg542)
+1. Once you login, go to the [home page](https://itp.nyu.edu/workshops/icm2017/)
+1. To create a new post, click on the giant plus button on the top right and fill the form that it shows.
+1. Note: The form field where you put in a gif accepts images/gifs of size < 1MB. You can also add links to your code or video. **Make sure to hyperlink all links.**
+1. Once you're done with the form, hit submit and eat some dumplings!
